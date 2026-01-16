@@ -7,4 +7,12 @@ describe('emailVerifier', () => {
         expect(result).toBe(false);
     });
 
+    test('devrait renvoyer false si le domaine n\'a pas de point', () => {
+        expect(emailVerifier('toto@gmailcom')).toBe(false);
+    });
+
+    test('devrait renvoyer false si le point est le dernier caractère', () => {
+        expect(emailVerifier('toto@gmail.com.')).toBe(false);
+    });
+
 });

@@ -4,7 +4,7 @@
 - Nom : Yavas
 - Prénom : Seymen
 - Email : seymen.yavas@student.vinci.be
-- URL : https://github.com/seymen-yavas-vinci/IPL-social
+- URL : https://github.com/seymen-yavas-vinci/IPL-social.git
 
 ## Description
 Ce projet est un validateur d'email (emailVerifier.ts) développé en TypeScript avec la méthode TDD.

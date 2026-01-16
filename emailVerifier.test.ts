@@ -15,4 +15,8 @@ describe('emailVerifier', () => {
         expect(emailVerifier('toto@gmail.com.')).toBe(false);
     });
 
+    test('devrait renvoyer false si l\'email contient un espace', () => {
+        expect(emailVerifier('user name@domain.com')).toBe(false);
+    });
+
 });

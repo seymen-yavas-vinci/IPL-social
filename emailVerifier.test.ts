@@ -19,4 +19,12 @@ describe('emailVerifier', () => {
         expect(emailVerifier('user name@domain.com')).toBe(false);
     });
 
+    test('devrait renvoyer false s\'il n\'y a rien avant le @', () => {
+        expect(emailVerifier('@domain.com')).toBe(false);
+    });
+
+    test('devrait renvoyer false s\'il n\'y a rien après le @', () => {
+        expect(emailVerifier('user@')).toBe(false);
+    });
+
 });
